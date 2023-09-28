@@ -37,9 +37,10 @@ main h2 {
   margin-left: 10%;
   margin-top: 3rem;
   text-shadow: 2px 3px 4px black;
+  border-left: 4px solid yellow;
 }
 main .img-grande img {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   margin-left: 10%;
   width: 70%;
 }
@@ -94,7 +95,7 @@ main h4 {
   main h2 {
     font-size: 6vw;
     margin: 5%;
-    text-align: center;
+    text-align: start;
   }
   main .img-grande img {
     display: block;
@@ -123,6 +124,72 @@ main h4 {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+  }
+}
+/*SEXO*/
+.main-sexo h2 {
+  font-size: 2vw;
+  padding: 2%;
+  margin: 2% 5% 0 5%;
+  border: yellow outset;
+}
+.main-sexo h6 {
+  font-size: 3.5vw;
+  color: white;
+}
+.main-sexo h5 {
+  text-transform: uppercase;
+  font-size: 4.5vw;
+  color: white;
+}
+.main-sexo p {
+  font-size: 2.5vw;
+  color: white;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 65%;
+  height: 100%;
+}
+.card img {
+  width: 60%;
+}
+
+@media (max-width: 1040px) {
+  .main-sexo h2 {
+    font-size: 3vw;
+  }
+  .main-sexo h5 {
+    font-size: 4.5vw;
+  }
+  .main-sexo h6 {
+    font-size: 4vw;
+  }
+  .main-sexo p {
+    font-size: 3.5vw;
+  }
+  .main-sexo .card {
+    width: 70%;
+  }
+}
+@media (max-width: 770px) {
+  .main-sexo h2 {
+    font-size: 4vw;
+  }
+  .main-sexo h5 {
+    font-size: 5.5vw;
+  }
+  .main-sexo h6 {
+    font-size: 4.5vw;
+  }
+  .main-sexo p {
+    font-size: 4.5vw;
+  }
+  .main-sexo .card {
+    margin-left: 0;
+    margin-right: 0;
+    width: 70%;
   }
 }
 .footer {
