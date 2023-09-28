@@ -1,0 +1,216 @@
+.navbar img {
+  width: 15rem;
+}
+.navbar a {
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar li a:hover {
+  background-color: yellow;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+.navbar .a-nav a {
+  width: 30%;
+}
+
+/*BODY*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/fondo.png);
+}
+
+/*INDEX*/
+main h2 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+  margin-left: 10%;
+  margin-top: 3rem;
+  text-shadow: 2px 3px 4px black;
+}
+main .img-grande img {
+  margin-top: 3.5rem;
+  margin-left: 10%;
+  width: 70%;
+}
+main h3 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  text-shadow: 2px 3px 4px black;
+}
+main .titulo {
+  margin-top: 6rem;
+}
+main h4 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  text-shadow: 2px 3px 4px black;
+  margin-top: 4%;
+}
+
+.card {
+  background-color: #1e1e1e;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.card h5 {
+  color: white;
+  text-transform: uppercase;
+}
+.card img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.card:hover {
+  background-color: #323232;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 770px) {
+  main h2 {
+    font-size: 6vw;
+    margin: 5%;
+    text-align: center;
+  }
+  main .img-grande img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  main .titulo {
+    margin-top: 10%;
+  }
+  main .titulo h3 {
+    font-size: 5vw;
+  }
+  main .titulo h4 {
+    font-size: 4vw;
+  }
+  main .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 100%;
+  }
+  main .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+.footer {
+  background-color: #1e1e1e;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 1px rgb(60, 56, 56);
+}
+
+.patrocinadores {
+  background-color: #1e1e1e;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: solid 1px #3c3838;
+}
+.patrocinadores p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+.logo-pa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.lista-linea {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-right: 0.3rem;
+  font-weight: 600;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.sociales {
+  text-align: right;
+}
+
+.soc {
+  cursor: pointer;
+  animation: salto 0.5s infinite alternate;
+}
+.soc:hover {
+  color: red;
+}
+
+@keyframes salto {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.copy {
+  background-color: #1e1e1e;
+  text-align: center;
+  color: white;
+}
+
+p {
+  margin-bottom: 0px;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 1040px) {
+  .sociales {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .left {
+    text-align: center;
+  }
+  .lista-linea a, .copy p {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
