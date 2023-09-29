@@ -226,6 +226,50 @@ body {
     width: 70%;
   }
 }
+/*TIENDA*/
+.main-tienda h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.main-tienda .card {
+  width: 20%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 4px 4px 4px black;
+}
+.main-tienda .card h6 {
+  font-size: 1.5vw;
+}
+.main-tienda .card p {
+  font-size: 1.3vw;
+}
+.main-tienda .card a {
+  font-size: 2vw;
+  color: black;
+}
+.main-tienda .card-image {
+  position: relative;
+  padding-bottom: 3%;
+}
+.main-tienda .card-image img {
+  width: 100%;
+  height: auto;
+}
+.main-tienda .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.main-tienda .card:hover .hover-image {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
 .footer {
   background-color: #1e1e1e;
   padding-top: 2rem;

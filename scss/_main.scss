@@ -228,3 +228,57 @@ body {
         }
     }
 }
+
+/*TIENDA*/
+
+.main-tienda{
+    h3{
+        font-family: $funte-sobtitulos;
+        color: white;
+        font-size: 3vw;
+        text-transform: uppercase;
+    }
+    .card {
+        width: 20%;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 4px 4px 4px black;
+        h6{
+            font-size: 1.5vw;
+          }
+    
+          p{
+            font-size: 1.3vw;
+          }
+          a{
+            font-size: 2vw;
+            color: black;
+          }
+      }
+      
+      .card-image {
+        position: relative;
+        img{
+            width: 100%;
+        height: auto;
+        }
+        padding-bottom: 3%;
+      }
+      
+      .hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+      
+      .card:hover .hover-image {
+        opacity: 1;
+        transition-duration: .5s;
+      } 
+
+      
+}
+
