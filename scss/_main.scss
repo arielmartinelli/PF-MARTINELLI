@@ -1,0 +1,230 @@
+/*BODY*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+body {
+    background-image: url(../img/fondo.png);
+}
+
+/*INDEX*/
+
+.main-inex{
+    h2{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-left: 10%;
+        margin-top: 3rem;
+        text-shadow: 2px 3px 4px black;
+        border-left: 4px solid yellow;
+    }
+
+    .img-grande img{
+        margin-top: 2rem;
+        margin-left: 10%;
+        width: 70%;
+    }
+
+    h3{
+        font-family: $funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 2vw;
+        padding: 2%;
+        margin: 2% 5% 0 5%;
+        border: yellow outset ;
+        color: white;
+        margin-top: 8%;
+    }
+    h6{
+        font-size: 3vw;
+         color: white;
+    }
+    h5{
+        text-transform: uppercase;
+        font-size: 4vw;
+        color: white;
+    }
+    p{
+        font-size: 2.5vw;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+.card{
+    background-color: $color-cards;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    img{
+        @include centrar-col;
+        width: 60%;
+    }
+}
+
+.card{
+    h5{
+        color: white;
+        text-transform: uppercase;
+    }
+    img:hover {
+        @include hover-img;
+    }
+}
+
+.card:hover{
+    @include hover-card
+}
+
+@media (max-width:770px){
+    .main-inex{
+        h2{
+            font-size: 6vw;
+            margin: 5%;
+            text-align: start;
+        }
+        .img-grande img{
+            @include centrar-col;
+            margin-top: 5%;
+        }
+        h3{
+            font-size: 4vw;
+        }
+        h5{
+            font-size: 6vw;
+        }
+        h6{
+            font-size: 5vw;
+        }
+        p{
+            font-size: 3.5vw;
+        }
+    }
+}
+
+/*SEXO*/
+
+.main-sexo{
+    h2{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 4vw;
+        padding: 2% 0% 2% 0%;
+        margin: 3rem 4rem 0rem 4rem;
+        text-shadow: 2px 3px 4px black;
+        border-top: 8px solid yellow;
+        border-bottom: 8px solid yellow;
+    }
+    h3{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 3.5vw;
+        text-shadow: 2px 3px 4px black;
+    }
+
+    .titulo{
+        margin-top: 6rem;
+    }
+    h4{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 2.5vw;
+        text-shadow: 2px 3px 4px black;
+        margin-top: 4%;
+    }
+    .izq{
+        margin-right: 5% !important;
+    }
+    .der{
+        margin-left: 5% !important;
+    }
+    .card{
+        @include centrar-col;
+        width: 65%;
+        height: 100%;
+        img{
+            width: 60%;
+        }
+        p{
+            font-size: 1.5vw;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
+
+
+
+@media (max-width:1040px){
+    .main-sexo{
+        h2{
+            font-size: 4vw;
+        }
+        h5{
+            font-size: 6vw;
+        }
+        h6{
+            font-size: 5vw;
+        }
+        
+        .card{
+            width: 90%;
+            img{
+                width: 70%;
+            }
+            p{
+                font-size: 2vw;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:770px){
+    .main-sexo{
+        h2{
+            font-size: 5vw;
+            margin: 3rem 2.5rem 0rem 2.5rem;
+        }
+        h3{
+            font-size: 5.5vw;
+            
+        }
+        h4{
+            font-size: 4vw;
+        }
+        
+        .card{
+            @include centrar-col;
+            width: 90%;
+            p{
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .main-sexo{
+        .card{
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: 60%;
+            img{
+                width: 70%;
+            }
+        }
+    }
+}

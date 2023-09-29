@@ -1,0 +1,16 @@
+@mixin hover-card{
+    background-color: $color-hover ;
+    transition-duration: .5s;
+}
+
+@mixin hover-img{
+    -webkit-transform: scale(1.5);
+        transform: scale(1.1);
+        transition-duration: 1s;
+}
+
+@mixin centrar-col{
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+}

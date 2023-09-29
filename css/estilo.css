@@ -29,7 +29,7 @@ body {
 }
 
 /*INDEX*/
-main h2 {
+.main-inex h2 {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
@@ -39,33 +39,39 @@ main h2 {
   text-shadow: 2px 3px 4px black;
   border-left: 4px solid yellow;
 }
-main .img-grande img {
+.main-inex .img-grande img {
   margin-top: 2rem;
   margin-left: 10%;
   width: 70%;
 }
-main h3 {
-  color: white;
+.main-inex h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 3.5vw;
-  text-shadow: 2px 3px 4px black;
-}
-main .titulo {
-  margin-top: 6rem;
-}
-main h4 {
+  font-size: 2vw;
+  padding: 2%;
+  margin: 2% 5% 0 5%;
+  border: yellow outset;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 8%;
+}
+.main-inex h6 {
+  font-size: 3vw;
+  color: white;
+}
+.main-inex h5 {
   text-transform: uppercase;
+  font-size: 4vw;
+  color: white;
+}
+.main-inex p {
   font-size: 2.5vw;
-  text-shadow: 2px 3px 4px black;
-  margin-top: 4%;
+  color: white;
+  text-transform: uppercase;
 }
 
 .card {
   background-color: #1e1e1e;
-  width: 80%;
+  width: 60%;
   height: 100%;
   overflow: hidden;
 }
@@ -73,7 +79,7 @@ main h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 60%;
 }
 
 .card h5 {
@@ -92,103 +98,131 @@ main h4 {
 }
 
 @media (max-width: 770px) {
-  main h2 {
+  .main-inex h2 {
     font-size: 6vw;
     margin: 5%;
     text-align: start;
   }
-  main .img-grande img {
+  .main-inex .img-grande img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
   }
-  main .titulo {
-    margin-top: 10%;
-  }
-  main .titulo h3 {
-    font-size: 5vw;
-  }
-  main .titulo h4 {
+  .main-inex h3 {
     font-size: 4vw;
   }
-  main .card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
-    height: 100%;
+  .main-inex h5 {
+    font-size: 6vw;
   }
-  main .card img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  .main-inex h6 {
+    font-size: 5vw;
+  }
+  .main-inex p {
+    font-size: 3.5vw;
   }
 }
 /*SEXO*/
 .main-sexo h2 {
-  font-size: 2vw;
-  padding: 2%;
-  margin: 2% 5% 0 5%;
-  border: yellow outset;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+  padding: 2% 0% 2% 0%;
+  margin: 3rem 4rem 0rem 4rem;
+  text-shadow: 2px 3px 4px black;
+  border-top: 8px solid yellow;
+  border-bottom: 8px solid yellow;
 }
-.main-sexo h6 {
+.main-sexo h3 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
   font-size: 3.5vw;
-  color: white;
+  text-shadow: 2px 3px 4px black;
 }
-.main-sexo h5 {
+.main-sexo .titulo {
+  margin-top: 6rem;
+}
+.main-sexo h4 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 4.5vw;
-  color: white;
-}
-.main-sexo p {
   font-size: 2.5vw;
-  color: white;
-  text-transform: uppercase;
+  text-shadow: 2px 3px 4px black;
+  margin-top: 4%;
 }
-
-.card {
+.main-sexo .izq {
+  margin-right: 5% !important;
+}
+.main-sexo .der {
+  margin-left: 5% !important;
+}
+.main-sexo .card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 65%;
   height: 100%;
 }
-.card img {
+.main-sexo .card img {
   width: 60%;
+}
+.main-sexo .card p {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: white;
 }
 
 @media (max-width: 1040px) {
   .main-sexo h2 {
-    font-size: 3vw;
-  }
-  .main-sexo h5 {
-    font-size: 4.5vw;
-  }
-  .main-sexo h6 {
     font-size: 4vw;
   }
-  .main-sexo p {
-    font-size: 3.5vw;
+  .main-sexo h5 {
+    font-size: 6vw;
+  }
+  .main-sexo h6 {
+    font-size: 5vw;
   }
   .main-sexo .card {
+    width: 90%;
+  }
+  .main-sexo .card img {
     width: 70%;
+  }
+  .main-sexo .card p {
+    font-size: 2vw;
   }
 }
 @media (max-width: 770px) {
   .main-sexo h2 {
-    font-size: 4vw;
+    font-size: 5vw;
+    margin: 3rem 2.5rem 0rem 2.5rem;
   }
-  .main-sexo h5 {
+  .main-sexo h3 {
     font-size: 5.5vw;
   }
-  .main-sexo h6 {
-    font-size: 4.5vw;
-  }
-  .main-sexo p {
-    font-size: 4.5vw;
+  .main-sexo h4 {
+    font-size: 4vw;
   }
   .main-sexo .card {
-    margin-left: 0;
-    margin-right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .main-sexo .card p {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 576px) {
+  .main-sexo .card {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 60%;
+  }
+  .main-sexo .card img {
     width: 70%;
   }
 }
