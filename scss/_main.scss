@@ -34,7 +34,7 @@ body {
     h3{
         font-family: $funte-sobtitulos;
         text-transform: uppercase;
-        font-size: 2vw;
+        font-size: 3vw;
         padding: 2%;
         margin: 2% 5% 0 5%;
         border: yellow outset ;
@@ -92,7 +92,7 @@ body {
             margin-top: 5%;
         }
         h3{
-            font-size: 4vw;
+            font-size: 4.5vw;
         }
         h5{
             font-size: 6vw;
@@ -124,7 +124,7 @@ body {
         color: white;
         font-family:$funte-sobtitulos;
         text-transform: uppercase;
-        font-size: 3.5vw;
+        font-size: 4vw;
         text-shadow: 2px 3px 4px black;
     }
 
@@ -282,7 +282,180 @@ body {
         }
         padding-bottom: 3%;
       }
-
-      
 }
 
+@media (max-width:768px){
+    .main-tienda{
+        h3{
+            font-size: 5.5vw;
+        }
+        h4{
+            font-size: 4.5vw;
+        }
+    }
+}
+
+/*Contacto*/
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    .caja-amarilla{
+        position: relative;
+        width: 75%;
+        height: 15rem;
+        @include centrar-col;
+        background-color: yellow;
+    }
+    .caja-form{
+        width: 60%;
+        height: 30rem;
+        background-color: $color-hover;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h3{
+            font-family: $funte-sobtitulos;
+            text-transform: uppercase;
+            font-size: 3vw;
+            color: white; 
+            text-shadow: 2px 2px 4px black;
+        }
+        input{
+            background-color: transparent;
+            color: white; 
+            font-size: 1.5vw;
+            width: 100%; 
+            height: 2.5rem; 
+            border: none;  
+            border-bottom: solid 2px yellow;  
+            margin-top: 10px;  
+            padding-left: 10px;
+            margin-bottom: 2%; 
+        }
+        textarea{
+          background-color: transparent; 
+          width: 100%;
+          height: 8rem;
+          color: white;    
+          border: solid 1px yellow;  
+          font-size: 1.5vw;
+        }   
+        
+        
+        button{
+            width: 100%; 	
+            text-transform: uppercase;
+            background-color: red; 
+            border: none; 
+            border-radius: 10px;  
+            cursor: pointer;
+            p{
+            color: white;
+            padding: 2%; 
+            }
+        }
+        ::-webkit-input-placeholder {
+         color: white;
+        }
+        .form input:focus{
+            outline: 0;
+            border-bottom: solid 2px yellow;
+        }
+        .form textarea:focus{
+            outline:0;
+            border: solid 1px yellow;
+        }
+    }
+}
+
+@media (max-width:1040px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 4.5vw;
+            }
+            input{
+                font-size:2vw ;
+            }
+            textarea{
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 4.5vw;
+            }
+            input{
+                font-size:2vw ;
+                margin: 0;
+            }
+            textarea{
+                font-size: 2vw;
+                height: 5rem
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width:650px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 5vw;
+            }
+            input{
+                font-size:2.5vw ;
+                margin: 0;
+            }
+            textarea{
+                font-size: 2.5vw;
+                height: 6rem
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 6vw;
+            }
+            input{
+                font-size:3vw ;
+                margin: 0;
+            }
+            textarea{
+                font-size: 3vw;
+                height: 7rem
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
+    }
+}

@@ -36,7 +36,7 @@ body {
 /*INDEX*/
 .main-inex h2 {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-transform: uppercase;
   font-size: 4vw;
   margin-left: 10%;
@@ -50,9 +50,9 @@ body {
   width: 70%;
 }
 .main-inex h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 2%;
   margin: 2% 5% 0 5%;
   border: yellow outset;
@@ -112,7 +112,7 @@ body {
     margin-top: 5%;
   }
   .main-inex h3 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
   .main-inex h5 {
     font-size: 6vw;
@@ -127,7 +127,7 @@ body {
 /*SEXO*/
 .main-sexo h2 {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-transform: uppercase;
   font-size: 4vw;
   padding: 2% 0% 2% 0%;
@@ -138,9 +138,9 @@ body {
 }
 .main-sexo h3 {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-transform: uppercase;
-  font-size: 3.5vw;
+  font-size: 4vw;
   text-shadow: 2px 3px 4px black;
 }
 .main-sexo .titulo {
@@ -148,7 +148,7 @@ body {
 }
 .main-sexo h4 {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   text-transform: uppercase;
   font-size: 2.5vw;
   text-shadow: 2px 3px 4px black;
@@ -230,7 +230,7 @@ body {
 }
 /*TIENDA*/
 .main-tienda h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   color: white;
   font-size: 4vw;
   text-transform: uppercase;
@@ -240,7 +240,7 @@ body {
   border-bottom: 8px solid yellow;
 }
 .main-tienda h4 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Kanit", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 3vw;
   text-transform: uppercase;
@@ -283,6 +283,159 @@ body {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .main-tienda h3 {
+    font-size: 5.5vw;
+  }
+  .main-tienda h4 {
+    font-size: 4.5vw;
+  }
+}
+/*Contacto*/
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+.contacto .caja-amarilla {
+  position: relative;
+  width: 75%;
+  height: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: yellow;
+}
+.contacto .caja-form {
+  width: 60%;
+  height: 30rem;
+  background-color: #323232;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contacto .caja-form h3 {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.contacto .caja-form input {
+  background-color: transparent;
+  color: white;
+  font-size: 1.5vw;
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-bottom: solid 2px yellow;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 2%;
+}
+.contacto .caja-form textarea {
+  background-color: transparent;
+  width: 100%;
+  height: 8rem;
+  color: white;
+  border: solid 1px yellow;
+  font-size: 1.5vw;
+}
+.contacto .caja-form button {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contacto .caja-form button p {
+  color: white;
+  padding: 2%;
+}
+.contacto .caja-form ::-webkit-input-placeholder {
+  color: white;
+}
+.contacto .caja-form .form input:focus {
+  outline: 0;
+  border-bottom: solid 2px yellow;
+}
+.contacto .caja-form .form textarea:focus {
+  outline: 0;
+  border: solid 1px yellow;
+}
+
+@media (max-width: 1040px) {
+  .contacto .caja-form h3 {
+    font-size: 4.5vw;
+  }
+  .contacto .caja-form input {
+    font-size: 2vw;
+  }
+  .contacto .caja-form textarea {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  .contacto .caja-form h3 {
+    font-size: 4.5vw;
+  }
+  .contacto .caja-form input {
+    font-size: 2vw;
+    margin: 0;
+  }
+  .contacto .caja-form textarea {
+    font-size: 2vw;
+    height: 5rem;
+  }
+  .contacto .caja-form p {
+    padding-bottom: 2%;
+  }
+  .contacto .caja-form button {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 650px) {
+  .contacto .caja-form h3 {
+    font-size: 5vw;
+  }
+  .contacto .caja-form input {
+    font-size: 2.5vw;
+    margin: 0;
+  }
+  .contacto .caja-form textarea {
+    font-size: 2.5vw;
+    height: 6rem;
+  }
+  .contacto .caja-form p {
+    padding-bottom: 2%;
+  }
+  .contacto .caja-form button {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 550px) {
+  .contacto .caja-form h3 {
+    font-size: 6vw;
+  }
+  .contacto .caja-form input {
+    font-size: 3vw;
+    margin: 0;
+  }
+  .contacto .caja-form textarea {
+    font-size: 3vw;
+    height: 7rem;
+  }
+  .contacto .caja-form p {
+    padding-bottom: 2%;
+  }
+  .contacto .caja-form button {
+    margin-top: 2%;
+  }
+}
 .footer {
   background-color: #1e1e1e;
   padding-top: 2rem;
