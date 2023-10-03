@@ -56,53 +56,49 @@
 
   <main class="contacto">
     <div class="caja-amarilla"></div>
-    <div class="caja-form py-4 ps-5 pe-5">
+    <div class="caja-form py-4 ps-5 pe-5 mx-auto">
       <div class="row">
         <h3 class="text-center mb-3"> Contáctenos </h3>
-
+  
         <div class="form col-xl-6 col-md-6 col-sm-12">
           <form action="submeter-formulario.php" method="post">
             <p>
-              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                placeholder="Escribe tu nombre">
+              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
             </p>
             <p>
-              <input type="text" name="introducir_apellido" id="apellido" required="obligatorio"
-                placeholder="Escribe tu apellido">
+              <input type="text" name="introducir_apellido" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
             </p>
-          </form>
         </div>
         <div class="form col-xl-6 col-md-6 col-sm-12">
           <form action="submeter-formulario.php" method="post">
             <p>
-              <input type="email" name="introducir_email" id="email" required="obligatorio"
-                placeholder="Escribe tu Email">
+              <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
             </p>
-
+  
             <p>
               <input type="tel " name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" >
             </p>
-          </form>
         </div>
-      </div>
-      <div class="form">
-        <form action="submeter-formulario.php" method="post">
-          <p>
-            <textarea name="introducir_mensaje" class="texto_mensaje mt-3 p-2" id="mensaje" required="obligatorio"
-              placeholder="Deja aquí tu mensaje..."></textarea>
-          </p>
-          <div class="row">
-            <div class="enviar col-xl-6 col-md-6 col-sm-12">
-              <button type="submit" name="enviar_formulario" id="enviar">
-                <p>Enviar</p>
-              </button>
-            </div>
-            <div class="borrar col-xl-6 col-md-6 col-sm-12">
-              <button type="reset" name="reset" id="reset">
-                <p>Borrar</p>
-              </button>
-            </div>
-          </div>
+  
+        <div class="form">
+          <form action="submeter-formulario.php" method="post">
+            <p>
+              <textarea name="introducir_mensaje" class="texto_mensaje mt-3 p-2" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea>
+            </p>
+        </div>
+  
+        <div class="enviar col-xl-6 col-md-6 col-sm-12">
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+        </div>
+  
+        <div class="borrar col-xl-6 col-md-6 col-sm-12">
+          <button type="reset" name="reset" id="reset">
+            <p>Borrar</p>
+          </button>
+        </div>
+  
         </form>
       </div>
     </div>
@@ -124,22 +120,27 @@
     </div>
     <div class="row footer mx-0 ">
       <div class="left col-xl-7 col-md-12 col-sm-12">
-        <ul class="lista-linea">
-          <a href="../index.html">
-            <li> Inicio |</li>
-          </a>
-
-          <a href="rutinas/sexo.html">
-            <li> Rutinas |</li>
-          </a>
-          <a href="tienda.html">
-            <li> Tienda |</li>
-          </a>
-          <a href="contacto.html">
-            <li> Contacto </li>
-          </a>
-        </ul>
-      </div>
+        <div class="d-flex ">
+            <div class="inicio-f">
+                <a href="index.html"> Inicio&nbsp |&nbsp</a>
+            </div>
+            <div class="rutina-f mx-2">
+                <a href="paginas/rutinas/rutinas.html"> Rutinas &nbsp&nbsp|</a>
+                <ul class="ul-li ps-0">
+                    <li> <a href=""> Adelgazar</a></li>
+                    <li> <a href="">Tonificar</a> </li>
+                    <li> <a href="">Hipertrofia</a> </li>
+                    <li> <a href="">Calistenia</a> </li>
+                    <li> <a href="">Deportivo</a> </li>
+                    <li> <a href="">Yoga</a> </li>
+                </ul>
+            </div>
+            <div class="contacto-f">
+                <a href="paginas/contacto.html">&nbsp Contacto </a>
+            </div>
+        </div>
+        
+    </div>
       <div class="rigth col-xl-5 col-md-12 col-sm-12 sociales  pe-4">
         <svg xmln="htstp://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-twitter mx-2 soc"
           viewBox="0 0 16 16">

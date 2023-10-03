@@ -249,6 +249,7 @@ body {
     
     .card {
         width: 18%;
+        margin-bottom: 1%;
         border-radius: 5px;
         background-color: white;
         box-shadow: 4px 4px 4px black;
@@ -298,26 +299,10 @@ body {
 /*Contacto*/
 
 .contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    position: relative;
-    .caja-amarilla{
-        position: relative;
-        width: 75%;
-        height: 15rem;
-        @include centrar-col;
-        background-color: yellow;
-    }
     .caja-form{
-        width: 60%;
+        width: 80%;
         height: 30rem;
         background-color: $color-hover;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         h3{
             font-family: $funte-sobtitulos;
             text-transform: uppercase;
@@ -359,6 +344,11 @@ body {
             padding: 2%; 
             }
         }
+
+        button:hover{
+            box-shadow: 0px 0px 4px white;
+        }
+
         ::-webkit-input-placeholder {
          color: white;
         }
@@ -372,6 +362,8 @@ body {
         }
     }
 }
+
+
 
 @media (max-width:1040px){
     .contacto{
@@ -392,6 +384,7 @@ body {
 @media (max-width:768px){
     .contacto{
         .caja-form{
+            height: 32rem;
             h3{
                 font-size: 4.5vw;
             }
