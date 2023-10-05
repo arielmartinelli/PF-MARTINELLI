@@ -423,6 +423,82 @@ body {
     margin-top: 2%;
   }
 }
+/*RUTINAS VARIAS*/
+.rutinas h2 {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  border-left: 10px solid rgb(224, 224, 6);
+}
+.rutinas h3 {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.rutinas h4 {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+.rutinas .rutina-left {
+  background-color: #323232;
+  border: 4px solid black;
+}
+.rutinas .dia {
+  background-color: #1e1e1e;
+}
+.rutinas .dia h5 {
+  display: inline;
+  font-size: 2.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-right: 10%;
+}
+.rutinas .dia h6 {
+  display: inline;
+  font-size: 2rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.rutinas .dia .text {
+  display: flex;
+  align-items: center;
+}
+.rutinas .dia .text p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+.rutinas .dia img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .rutinas .dia h5 {
+    font-size: 2.5rem;
+  }
+  .rutinas .dia h6 {
+    font-size: 2rem;
+  }
+  .rutinas .dia .text p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .rutinas .dia h5 {
+    font-size: 2rem;
+  }
+  .rutinas .dia h6 {
+    font-size: 1.5rem;
+  }
+  .rutinas .dia .text p {
+    font-size: 1rem;
+  }
+}
+
 .footer {
   background-color: #1e1e1e;
   padding-top: 2rem;
@@ -512,74 +588,6 @@ p {
   }
   ul {
     display: none;
-  }
-}
-/*RUTINAS VARIAS*/
-.rutinas h3 {
-  font-family: "Kanit", sans-serif;
-  color: white;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-}
-.rutinas h4 {
-  font-family: "Kanit", sans-serif;
-  color: white;
-  font-size: 2.5rem;
-}
-.rutinas .rutina-left {
-  background-color: #323232;
-  border: 4px solid black;
-}
-.rutinas .dia {
-  background-color: #1e1e1e;
-}
-.rutinas .dia h5 {
-  display: inline;
-  font-size: 2.5rem;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  color: white;
-  margin-right: 10%;
-}
-.rutinas .dia h6 {
-  display: inline;
-  font-size: 2rem;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  color: white;
-}
-.rutinas .dia .text {
-  display: flex;
-  align-items: center;
-}
-.rutinas .dia .text p {
-  color: white;
-  font-size: 1.5rem;
-  padding: 2%;
-}
-.rutinas .dia img {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .rutinas .dia h5 {
-    font-size: 2.5rem;
-  }
-  .rutinas .dia h6 {
-    font-size: 2rem;
-  }
-  .rutinas .dia .text p {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 550px) {
-  .rutinas .dia h5 {
-    font-size: 2rem;
-  }
-  .rutinas .dia h6 {
-    font-size: 1.5rem;
-  }
-  .rutinas .dia .text p {
-    font-size: 1rem;
   }
 }
 
