@@ -1,0 +1,546 @@
+/*BODY*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+body {
+    background-image: url(../img/fondo.png);
+}
+
+/*INDEX*/
+
+.main-inex{
+    h2{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-left: 10%;
+        margin-top: 3rem;
+        text-shadow: 2px 3px 4px black;
+        border-left: 4px solid yellow;
+    }
+
+    .img-grande img{
+        margin-top: 2rem;
+        margin-left: 10%;
+        width: 70%;
+    }
+
+    h3{
+        font-family: $funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 3vw;
+        padding: 2%;
+        margin: 2% 5% 0 5%;
+        border: yellow outset ;
+        color: white;
+        margin-top: 8%;
+    }
+    h5{
+        text-transform: uppercase;
+        font-size: 4vw;
+        color: white;
+        margin-top: 10%;
+    }
+    p{
+        font-size: 2.5vw;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+
+.card{
+    background-color: $color-cards;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    img{
+        @include centrar-col;
+        width: 60%;
+    }
+}
+
+.card{
+    h5{
+        color: white;
+        text-transform: uppercase;
+    }
+    img:hover {
+        @include hover-img;
+    }
+}
+
+.card:hover{
+    @include hover-card
+}
+
+@media (max-width:770px){
+    .main-inex{
+        h2{
+            font-size: 6vw;
+            margin: 5%;
+            text-align: start;
+        }
+        .img-grande img{
+            @include centrar-col;
+            margin-top: 5%;
+        }
+        h3{
+            font-size: 4.5vw;
+        }
+        h5{
+            font-size: 6vw;
+        }
+        h6{
+            font-size: 5vw;
+        }
+        p{
+            font-size: 3.5vw;
+        }
+    }
+}
+
+/*SEXO*/
+
+.main-sexo{
+    h2{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 4vw;
+        padding: 2% 0% 2% 0%;
+        margin: 3rem 4rem 0rem 4rem;
+        text-shadow: 2px 3px 4px black;
+        border-top: 8px solid yellow;
+        border-bottom: 8px solid yellow;
+    }
+    h3{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 4vw;
+        text-shadow: 2px 3px 4px black;
+    }
+
+    .titulo{
+        margin-top: 6rem;
+    }
+    h4{
+        color: white;
+        font-family:$funte-sobtitulos;
+        text-transform: uppercase;
+        font-size: 2.5vw;
+        text-shadow: 2px 3px 4px black;
+        margin-top: 4%;
+    }
+    .izq{
+        margin-right: 5% !important;
+    }
+    .der{
+        margin-left: 5% !important;
+    }
+    .card{
+        @include centrar-col;
+        width: 65%;
+        height: 100%;
+        img{
+            width: 60%;
+        }
+        p{
+            font-size: 1.5vw;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
+
+
+
+@media (max-width:1040px){
+    .main-sexo{
+        h2{
+            font-size: 4vw;
+        }
+        h5{
+            font-size: 6vw;
+        }
+        h6{
+            font-size: 5vw;
+        }
+        
+        .card{
+            width: 90%;
+            img{
+                width: 70%;
+            }
+            p{
+                font-size: 2vw;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:770px){
+    .main-sexo{
+        h2{
+            font-size: 5vw;
+            margin: 3rem 2.5rem 0rem 2.5rem;
+        }
+        h3{
+            font-size: 5.5vw;
+            
+        }
+        h4{
+            font-size: 4vw;
+        }
+        
+        .card{
+            @include centrar-col;
+            width: 90%;
+            p{
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .main-sexo{
+        .card{
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: 60%;
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
+
+/*TIENDA*/
+
+.main-tienda{
+    h3{
+        font-family: $funte-sobtitulos;
+        color: white;
+        font-size: 4vw;
+        text-transform: uppercase;
+        padding: 2% 0% 2% 0%;
+        margin:5% 5% 10% 5% ;
+        border-top: 8px solid yellow;
+        border-bottom: 8px solid yellow;
+    }
+    h4{
+        font-family: $funte-sobtitulos;
+        color: rgb(255, 255, 255);
+        font-size: 3vw;
+        text-transform: uppercase;
+        padding: 2%;
+        margin-top: 6% !important;
+    }
+    
+    .card {
+        width: 18%;
+        margin-bottom: 1%;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 4px 4px 4px black;
+        h6{
+            font-size: 1.5vw;
+          }
+    
+          p{
+            font-size: 1.3vw;
+            padding-bottom: 1%
+          }
+          a{
+            @include centrar-col;
+            text-transform: uppercase;
+            font-size: 1.2vw;
+            font-weight: 600;
+            color: black;
+            background-color: yellow;
+            padding: 3% 4% 3% 4%;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5%;
+          }
+      }
+      
+      .card-image {
+        position: relative;
+        img{
+            width: 70%;
+            height: auto;
+        }
+        padding-bottom: 3%;
+      }
+}
+
+@media (max-width:768px){
+    .main-tienda{
+        h3{
+            font-size: 5.5vw;
+        }
+        h4{
+            font-size: 4.5vw;
+        }
+    }
+}
+
+/*Contacto*/
+
+.contacto{
+    .caja-form{
+        width: 80%;
+        height: 30rem;
+        background-color: $color-hover;
+        h3{
+            font-family: $funte-sobtitulos;
+            text-transform: uppercase;
+            font-size: 3vw;
+            color: white; 
+            text-shadow: 2px 2px 4px black;
+        }
+        input{
+            background-color: transparent;
+            color: white; 
+            font-size: 1.5vw;
+            width: 100%; 
+            height: 2.5rem; 
+            border: none;  
+            border-bottom: solid 2px yellow;  
+            margin-top: 10px;  
+            padding-left: 10px;
+            margin-bottom: 2%; 
+        }
+        textarea{
+          background-color: transparent; 
+          width: 100%;
+          height: 8rem;
+          color: white;    
+          border: solid 1px yellow;  
+          font-size: 1.5vw;
+        }   
+        
+        
+        button{
+            width: 100%; 	
+            text-transform: uppercase;
+            background-color: red; 
+            border: none; 
+            border-radius: 10px;  
+            cursor: pointer;
+            p{
+            color: white;
+            padding: 2%; 
+            }
+        }
+
+        button:hover{
+            box-shadow: 0px 0px 4px white;
+        }
+
+        ::-webkit-input-placeholder {
+         color: white;
+        }
+        .form input:focus{
+            outline: 0;
+            border-bottom: solid 2px yellow;
+        }
+        .form textarea:focus{
+            outline:0;
+            border: solid 1px yellow;
+        }
+    }
+}
+
+
+
+@media (max-width:1040px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 4.5vw;
+            }
+            input{
+                font-size:2vw ;
+            }
+            textarea{
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .contacto{
+        .caja-form{
+            height: 32rem;
+            h3{
+                font-size: 4.5vw;
+            }
+            input{
+                font-size:2vw ;
+                margin: 0;
+            }
+            textarea{
+                font-size: 2vw;
+                height: 5rem
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width:650px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 5vw;
+            }
+            input{
+                font-size:2.5vw ;
+                margin: 0;
+            }
+            textarea{
+                font-size: 2.5vw;
+                height: 6rem
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    .contacto{
+        .caja-form{
+            h3{
+                font-size: 6vw;
+            }
+            input{
+                font-size:3vw ;
+                margin: 0;
+            }
+            textarea{
+                font-size: 3vw;
+                height: 7rem
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
+    }
+}
+
+/*RUTINAS VARIAS*/
+
+.rutinas{
+    h2{
+      font-family: $funte-sobtitulos;
+      color: white;
+      font-size: 4rem;
+      text-transform: uppercase;
+      border-left: 10px solid rgb(224, 224, 6);
+    }
+    h3{
+      font-family: $funte-sobtitulos;
+      color: white;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+    h4{
+      font-family: $funte-sobtitulos;
+      color: white;
+      font-size: 2.5rem;
+    }
+    .rutina-left{
+      background-color: $color-hover;
+      border: 4px solid black;
+    }
+    .dia{
+      background-color: $color-cards;
+      h5{
+        display: inline;
+        font-size: 2.5rem;
+        font-family: $fuente-nav;
+        font-weight: 600;
+        color: white;
+        margin-right: 10%;
+      }
+      h6{
+        display: inline;
+        font-size: 2rem;
+        font-family: $fuente-nav;
+        font-weight: 600;
+        color: white;
+
+      }
+      .text{
+        display: flex;
+        align-items: center;
+        p{
+          color: white;
+          font-size: 1.5rem;
+          padding:2% ;
+        }
+      }
+      
+      img{
+        width: 100%;
+      }
+    }
+
+    @media (max-width:768px){
+      .dia{
+        h5{
+          font-size: 2.5rem;
+        }
+        h6{
+          font-size: 2rem;
+        }
+        .text{
+          p{
+            font-size: 1.5rem;
+          }
+        }
+      }
+      
+    }
+    @media (max-width:550px){
+      .dia{
+        h5{
+          font-size: 2rem;
+        }
+        h6{
+          font-size: 1.5rem;
+        }
+        .text{
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+      
+    }
+  }
